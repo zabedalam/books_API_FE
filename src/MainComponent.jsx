@@ -11,7 +11,7 @@ class MainComponent extends Component {
 
   componentDidMount = async () => {
     // const response = await fetch("http://localhost:5000/books");
-    const response = await fetch("https://booksapibe.herokuapp.com/books");
+    const response = await fetch("https://booksapibe.herokuapp.com/");
 
     const booksJson = await response.json();
     this.setState({
